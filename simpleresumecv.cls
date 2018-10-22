@@ -139,40 +139,40 @@ includefoot]{geometry}
 % The "Tinos" fonts are released under the Apache License Version 2.0,
 % and can be downloaded for free at <http://www.fontsquirrel.com/fonts/tinos>.
 % Symbol table: <http://www.fileformat.info/info/unicode/font/tinos/grid.htm>
-\setmainfont
-[Path=./Fonts/Tinos/,
-ItalicFont=Tinos-Italic,
-BoldFont=Tinos-Bold,
-BoldItalicFont=Tinos-BoldItalic]
-{Tinos-Regular.ttf}
+%\setmainfont
+%[Path=./Fonts/Tinos/,
+%ItalicFont=Tinos-Italic,
+%BoldFont=Tinos-Bold,
+%BoldItalicFont=Tinos-BoldItalic]
+%{Tinos-Regular.ttf}
 
-% Secondary font: "GNU FreeFont".
-% The "GNU FreeFont" fonts are released under the
-% GNU General Public License Version 3, and can be downloaded
-% for free at <https://savannah.gnu.org/projects/freefont/>.
-\newcommand{\UseSecondaryFont}{\fontspec
-[Path=./Fonts/GNUFreeFont/,
-ItalicFont=FreeSerifItalic,
-BoldFont=FreeSerifBold,
-BoldItalicFont=FreeSerifBoldItalic]
-{FreeSerif.otf}}
+%% Secondary font: "GNU FreeFont".
+%% The "GNU FreeFont" fonts are released under the
+%% GNU General Public License Version 3, and can be downloaded
+%% for free at <https://savannah.gnu.org/projects/freefont/>.
+%\newcommand{\UseSecondaryFont}{\fontspec
+%[Path=./Fonts/GNUFreeFont/,
+%ItalicFont=FreeSerifItalic,
+%BoldFont=FreeSerifBold,
+%BoldItalicFont=FreeSerifBoldItalic]
+%{FreeSerif.otf}}
 
-% Sans-serif font: Changed to "Tinos".
-\renewcommand{\sffamily}{\rmfamily}
+%% Sans-serif font: Changed to "Tinos".
+%\renewcommand{\sffamily}{\rmfamily}
 
-% Typewriter (monospace) font: Changed to "Tinos".
-\renewcommand{\ttfamily}{\rmfamily}
+%% Typewriter (monospace) font: Changed to "Tinos".
+%\renewcommand{\ttfamily}{\rmfamily}
 
-% Small caps font: Changed to "Tinos".
-\renewcommand{\scshape}{\rmfamily}
-%\renewcommand{\textsc}[1]{\textbf{\MakeUppercase{#1}}}
+%% Small caps font: Changed to "Tinos".
+%\renewcommand{\scshape}{\rmfamily}
+%%\renewcommand{\textsc}[1]{\textbf{\MakeUppercase{#1}}}
 
 % Font styles.
 \newcommand{\UseHeadingFont}{\normalfont}
 \newcommand{\UseHeaderFooterFont}{\UseHeadingFont\fontsize{8.2pt}{9.5pt}\selectfont}
 \newcommand{\UseNoteFont}{\UseHeadingFont\fontsize{8pt}{9.6pt}\selectfont}
 \newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{28pt}{33.6pt}\selectfont\bfseries}
-\newcommand{\UseSubTitleFont}{\normalfont\fontsize{8.6pt}{10.3pt}\selectfont}
+\newcommand{\UseSubTitleFont}{\normalfont\fontsize{10.6pt}{12.3pt}\selectfont}
 \newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{9pt}{11pt}\selectfont\bfseries}
 \newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{8.6pt}{10.3pt}\selectfont\bfseries}
 \newcommand{\UseDetailFont}{\normalfont\fontsize{8.6pt}{10.3pt}\selectfont}
@@ -189,7 +189,8 @@ BoldItalicFont=FreeSerifBoldItalic]
 
 \ifnum\TypesetInDraftMode=0
 \newcommand{\HeaderText}{}
-\newcommand{\FooterText}{\hfill\PageKOfN\hfill}
+%\newcommand{\FooterText}{\hfill\PageKOfN\hfill}
+\newcommand{\FooterText}{}
 \else
 \newcommand{\HeaderText}{}
 \newcommand{\FooterText}{\null\hphantom{\DraftStamp}\hfill%
@@ -248,8 +249,8 @@ BoldItalicFont=FreeSerifBoldItalic]
 \setlength\itemindent{0in}%
 \setlength\parskip{0in}%
 \setlength\topsep{0in}%
-\setlength\parsep{0in}%
-\setlength\itemsep{0.90\baselineskip}%
+\setlength\parsep{0.01in}%
+\setlength\itemsep{1.2\baselineskip}%
 \setlength\partopsep{0in}%
 %\raggedright%
 }%
